@@ -36,12 +36,12 @@ main{
      /*animation: anime1 5s ease -2s  alternate;*/
  }
 .something:hover{
-    animation: cloud 0.5s;
+    animation: cloud 0.5s ease-out forwards;
 }/*
 #cloud :hover{
     animation: cloud 0.5s;
 }*/
-
+/*----------------------アニメーションパート----------------------*/
  @keyframes cloud {
      0% {
          margin-bottom: 0px;
@@ -53,6 +53,7 @@ main{
          margin-bottom: 0px;
      }
  }
+/*--------------------メッセージパート--------------------------*/
 #msg_wrapper{
     position: absolute;
     display: inline-block;
@@ -68,4 +69,12 @@ main{
 .msage:active{
     animation: cloud 0.5s;
    
+}
+/*-------------------バルーンパート-----------------------------*/
+
+.baroon{
+    width:0px;
+    height:5px;
+    border: solid 30px #fff;
+    border-radius: 50% 50% 5% 5%;
 }
