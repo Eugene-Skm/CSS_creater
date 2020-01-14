@@ -10,14 +10,18 @@
      overflow: hidden;
 
  }
+main{
+    width: 100%;
+     height: 100%;
+}
 
  #cloud {
      position: absolute;
      display: inline-flex;
      justify-content: center;
      align-items: center;
-     width: 100%;
-     height: 100%;
+     width: auto;
+     height: auto;
      margin: 5px;
      top: 50%;
      left: 50%;
@@ -31,12 +35,12 @@
      margin: -4px;
      /*animation: anime1 5s ease -2s  alternate;*/
  }
-.something :hover{
+.something:hover{
     animation: cloud 0.5s;
-}
+}/*
 #cloud :hover{
     animation: cloud 0.5s;
-}
+}*/
 
  @keyframes cloud {
      0% {
@@ -49,12 +53,19 @@
          margin-bottom: 0px;
      }
  }
-#msage{
+#msg_wrapper{
     position: absolute;
     display: inline-block;
     top: 60%;
     left: 50%;
-    content:"2020";
     transform: translate(-50%, -50%);
-    
+}
+
+#msage::after{
+    content:"Hello World!";
+    font-size: 2rem;
+}
+.msage:active{
+    animation: cloud 0.5s;
+   
 }
