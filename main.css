@@ -11,7 +11,7 @@
      width: 100%;
      height: 100%;
      background: linear-gradient(#1E90FF, #1E90FF, #ccccff, #ccccff);
-     background-size: cover;
+     background-size:auto;
      overflow: hidden;
 
  }
@@ -23,9 +23,9 @@ main{
     position:absolute;
     top:95%;
     left: 0%;
-    width:100%;
-    height: 7%;
-    background-color: #2e8b57;
+    width:105%;
+    height: 10%;
+    background: linear-gradient( #1e7b47,#4eab77);
 }
 
 #cloud_wrapper{
@@ -56,17 +56,18 @@ main{
     border-right: solid 5px #764F13;
     border-radius: 10px;
     
+    cursor: pointer;
     
 }
  .something {
-     width: 2.9vw;
-     height: 2.9vw;
+     width: 2.5rem;
+     height: 2.5rem;
      background-color: #fff;
      border-radius: 50%;
      margin: -0.2vw;
      
      text-align: center;
-     line-height: 3vw;
+     line-height: 2.5rem;
      font-weight: bold;
      font-size: 1.5rem;
      
@@ -108,6 +109,7 @@ main{
      }
      50%{
         top: -20%;
+         
      }
      95%{
          top: 90%;
@@ -188,10 +190,13 @@ main{
 }
 #baroon1{
     background: #F39800;
+    background: linear-gradient(to right,#F39800, #e38810, #F39800);
     border: solid 0px #fff;
 }
 #backet1{
     background: #ffd700;
+    background: linear-gradient(to right,#ffd700, #efc810,#ffd700);
+    border-bottom: solid 2px #bf5800;
 }
 
 #airbaroon2{
@@ -202,23 +207,14 @@ main{
 }
 #baroon2{
     background: #009944;
-    /*linear-gradient(to right,#E60012, #F39800, #FFF100,#009944,#0068B7,#1D2088,#920783)*/
+    background: linear-gradient(to right,#009944, #008934, #009944);
     border: solid 0px #fff;
 }
 #backet2{
     background: #ffd700;
+    background: linear-gradient(to right,#ffd700, #efc810,#ffd700);
+    border-bottom: solid 2px #bf5800;
 }
 #backboard:hover{
     animation: cloud 0.5s ease-out forwards;
 }
-/*------------------------虹-------------------------*/
-#rainbowset{
-    position: absolute;
-    top: 65%;
-    left: 60%;
-}
-/*#color{
-    width: 75vh;
-    height: 30vh;
-    background: #764f13;
-}*/
