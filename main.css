@@ -5,30 +5,32 @@
  }
 
  body {
-     top:0%;
-     left:0%;
-     bottom:0%;
+     top: 0%;
+     left: 0%;
+     bottom: 0%;
      width: 100%;
      height: 100%;
      background: linear-gradient(#1E90FF, #1E90FF, #ccccff, #ccccff);
-     background-size:auto;
+     background-size: auto;
      overflow: hidden;
 
  }
-main{
-    width: 100%;
-     height: 100%;
-}
-#ground{
-    position:absolute;
-    top:95%;
-    left: 0%;
-    width:105%;
-    height: 10%;
-    background: linear-gradient( #1e7b47,#4eab77);
-}
 
-#cloud_wrapper{
+ main {
+     width: 100%;
+     height: 100%;
+ }
+
+ #ground {
+     position: absolute;
+     top: 95%;
+     left: 0%;
+     width: 105%;
+     height: 10%;
+     background: linear-gradient(#1e7b47, #4eab77);
+ }
+
+ #cloud_wrapper {
      position: absolute;
      width: auto;
      height: auto;
@@ -37,7 +39,7 @@ main{
      left: 50%;
      transform: translate(-50%, -50%);
 
-}
+ }
 
  #cloud {
      display: inline-flex;
@@ -45,56 +47,93 @@ main{
      align-items: center;
  }
 
-#backboard{
-    box-sizing: border-box;
-    width: auto;
-    height: auto;
-    padding: 15px;
-    
-    background-color: #966F33;
-    border-bottom: solid 5px #764F13;
-    border-right: solid 3px #764F13;
-    border-radius: 10px;
-    
-    cursor: pointer;
-    
-}
+ #backboard {
+     box-sizing: border-box;
+     width: auto;
+     height: auto;
+     padding: 15px;
+
+     background-color: #966F33;
+     border-bottom: solid 5px #764F13;
+     border-right: solid 3px #764F13;
+     border-radius: 10px;
+
+     cursor: pointer;
+
+ }
+
  .something {
      width: 2.5rem;
      height: 2.5rem;
      background-color: #fff;
      border-radius: 50%;
      margin: -0.2vw;
-     
+
      text-align: center;
      line-height: 2.5rem;
      font-weight: bold;
      font-size: 1.5rem;
-     
+
  }
-/*.something:hover{
+
+ /*.something:hover{
     animation: cloud 0.5s ease-out forwards;
 }
 */
-#something1::after{content: "H"}
-#something2::after{content: "e"}
-#something3::after{content: "l"}
-#something4::after{content: "l"}
-#something5::after{content: "o"}
-#something6::after{content: ""}
-#something7::after{content: "W"}
-#something8::after{content: "o"}
-#something9::after{content: "r"}
-#something10::after{content: "l"}
-#something11::after{content: "d"}
-/*----------------------アニメーションパート----------------------*/
+ #something1::after {
+     content: "H"
+ }
+
+ #something2::after {
+     content: "e"
+ }
+
+ #something3::after {
+     content: "l"
+ }
+
+ #something4::after {
+     content: "l"
+ }
+
+ #something5::after {
+     content: "o"
+ }
+
+ #something6::after {
+     content: ""
+ }
+
+ #something7::after {
+     content: "W"
+ }
+
+ #something8::after {
+     content: "o"
+ }
+
+ #something9::after {
+     content: "r"
+ }
+
+ #something10::after {
+     content: "l"
+ }
+
+ #something11::after {
+     content: "d"
+ }
+
+ /*----------------------アニメーションパート----------------------*/
  @keyframes cloud {
      0% {
          margin-bottom: 0px;
      }
-     50%{
-        margin-bottom: 50px;
+
+     50% {
+         margin-bottom: 50px;
      }
+
      100% {
          margin-bottom: 0px;
      }
@@ -104,131 +143,148 @@ main{
      0% {
          top: 90%;
      }
-     5%{
+
+     5% {
          top: 90%;
      }
-     50%{
-        top: -20%;
-         
+
+     50% {
+         top: -20%;
+
      }
-     95%{
+
+     95% {
          top: 90%;
      }
+
      100% {
          top: 90%;
      }
  }
-/*--------------------メッセージパート--------------------------*/
-#msg_wrapper{
-    position: absolute;
-    display: none;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
-#msage::after{
-    content:"Hello World!";
-    font-size: 2rem;
-}
-.msage:active{
-    animation: cloud 0.5s;
-   
-}
-/*-------------------バルーンパート-----------------------------*/
-.airbaroon{
-    position: absolute;
-    width: auto;
-    height: auto;
+ /*--------------------メッセージパート--------------------------*/
+ #msg_wrapper {
+     position: absolute;
+     display: none;
+     top: 60%;
+     left: 50%;
+     transform: translate(-50%, -50%);
  }
 
-.baroon{
-    position: absolute;
-    width:60px;
-    height:70px;
-    clip-path: polygon(-15% 0%, 115% 0%, 90% 100%, 10% 100%);
-    border-radius: 50% 50% 5% 5%;
-    transform: translate(-50%, -50%);
-}
-.rope{
-    position:absolute;
-    top:40px;
-    width:60px;
-    height:40px;
-    background: #000;
-    clip-path: polygon(8% 0%,17% 100%,20% 100%,11% 2%,89% 2%,80% 100%,83% 100%,92% 0%);
-    transform: translate(-50%, -50%);
-        
-}
-@media all and (-ms-high-contrast: none){
-    
-    .rope{
-    position:absolute;
-    top:40px;
-    width:36px;
-    height:40px;
-    background: transparent;
-        border-left: solid 2px #000;
-        border-right: solid 2px #000;
-    /*clip-path: polygon(8% 0%,17% 100%,20% 100%,11% 2%,89% 2%,80% 100%,83% 100%,92% 0%);*/
-    transform: translate(-50%, -50%);
-        
-    }
-}
-@supports (-ms-ime-align:auto) {
-    .rope{
-    position:absolute;
-    top:40px;
-    width:36px;
-    height:40px;
-    background: transparent;
-        border-left: solid 2px #000;
-        border-right: solid 2px #000;
-    /*clip-path: polygon(8% 0%,17% 100%,20% 100%,11% 2%,89% 2%,80% 100%,83% 100%,92% 0%);*/
-    transform: translate(-50%, -50%);
-        
-    }
-}
-.backet{
-    position: absolute;
-    top:70px;
-    width: 40px;
-    height: 20px;
-    transform: translate(-50%, -50%);
-    border-radius: 0% 0% 25% 25%;
-}
-#airbaroon1{
-    top:90%;
-    left: 30%;
-    animation: baroon 20s ease-in-out infinite;
-}
-#baroon1{
-    background: #F39800;
-    background: linear-gradient(to right,#F39800, #e38810, #F39800);
-    border: solid 0px #fff;
-}
-#backet1{
-    background: #ffd700;
-    background: linear-gradient(to right,#ffd700, #efc810,#ffd700);
-    border-bottom: solid 2px #bf5800;
-}
+ #msage::after {
+     content: "Hello World!";
+     font-size: 2rem;
+ }
 
-#airbaroon2{
-    top:90%;
-    left: 70%;
-    animation: baroon 25s ease-in-out infinite;
-    animation-delay: 5s;
-}
-#baroon2{
-    background: #009944;
-    background: linear-gradient(to right,#009944, #008934, #009944);
-    border: solid 0px #fff;
-}
-#backet2{
-    background: #ffd700;
-    background: linear-gradient(to right,#ffd700, #efc810,#ffd700);
-    border-bottom: solid 2px #bf5800;
-}
-#backboard:hover{
-    animation: cloud 0.5s ease-out forwards;
-}
+ .msage:active {
+     animation: cloud 0.5s;
+
+ }
+
+ /*-------------------バルーンパート-----------------------------*/
+ .airbaroon {
+     position: absolute;
+     width: auto;
+     height: auto;
+ }
+
+ .baroon {
+     position: absolute;
+     width: 60px;
+     height: 70px;
+     clip-path: polygon(-15% 0%, 115% 0%, 90% 100%, 10% 100%);
+     border-radius: 50% 50% 5% 5%;
+     transform: translate(-50%, -50%);
+ }
+
+ .rope {
+     position: absolute;
+     top: 40px;
+     width: 60px;
+     height: 40px;
+     background: #000;
+     clip-path: polygon(8% 0%, 17% 100%, 20% 100%, 11% 2%, 89% 2%, 80% 100%, 83% 100%, 92% 0%);
+     transform: translate(-50%, -50%);
+
+ }
+
+ @media all and (-ms-high-contrast: none) {
+
+     .rope {
+         position: absolute;
+         top: 40px;
+         width: 36px;
+         height: 40px;
+         background: transparent;
+         border-left: solid 2px #000;
+         border-right: solid 2px #000;
+         /*clip-path: polygon(8% 0%,17% 100%,20% 100%,11% 2%,89% 2%,80% 100%,83% 100%,92% 0%);*/
+         transform: translate(-50%, -50%);
+
+     }
+ }
+
+ @supports (-ms-ime-align:auto) {
+     .rope {
+         position: absolute;
+         top: 40px;
+         width: 36px;
+         height: 40px;
+         background: transparent;
+         border-left: solid 2px #000;
+         border-right: solid 2px #000;
+         /*clip-path: polygon(8% 0%,17% 100%,20% 100%,11% 2%,89% 2%,80% 100%,83% 100%,92% 0%);*/
+         transform: translate(-50%, -50%);
+
+     }
+ }
+
+ .backet {
+     position: absolute;
+     top: 70px;
+     width: 40px;
+     height: 20px;
+     transform: translate(-50%, -50%);
+     border-radius: 0% 0% 25% 25%;
+ }
+
+ #airbaroon1 {
+     top: 90%;
+     left: 30%;
+     animation: baroon 20s ease-in-out infinite;
+ }
+
+ #baroon1 {
+     background: #F39800;
+     background: linear-gradient(to right, #F39800, #e38810, #F39800);
+     border: solid 0px #fff;
+ }
+
+ #backet1 {
+     background: #ffd700;
+     background: linear-gradient(to right, #ffd700, #efc810, #ffd700);
+     border-bottom: solid 2px #bf5800;
+ }
+
+ #airbaroon2 {
+     top: 90%;
+     left: 70%;
+     animation: baroon 25s ease-in-out infinite;
+     animation-delay: 5s;
+ }
+
+ #baroon2 {
+     background: #009944;
+     background: linear-gradient(to right, #009944, #008934, #009944);
+     border: solid 0px #fff;
+ }
+
+ #backet2 {
+     background: #ffd700;
+     background: linear-gradient(to right, #ffd700, #efc810, #ffd700);
+     border-bottom: solid 2px #bf5800;
+ }
+
+ #backboard:hover {
+     animation: cloud 0.5s ease-out forwards;
+ }
