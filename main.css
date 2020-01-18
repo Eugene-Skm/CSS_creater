@@ -209,7 +209,7 @@
  }
 
  @media all and (-ms-high-contrast: none) {
-
+a
      .rope {
          position: absolute;
          top: 40px;
