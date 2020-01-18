@@ -35,7 +35,7 @@
      width: auto;
      height: auto;
      margin: 5px;
-     top: 20%;
+     top: 5%;
      left: 50%;
      transform: translate(-50%, -50%);
 
@@ -288,3 +288,17 @@ a
  #backboard:hover {
      animation: cloud 0.5s ease-out forwards;
  }
+#back_color {
+    position: absolute;
+    top: 10%;
+    left:50%;
+    width:690px;
+    height: 460px;
+    transform: translate(-50%,0%);
+    
+    /* https://www.nxworld.net/tips/css-gradient-pattern.html*/
+  background-color: #aaa;
+  background-image: linear-gradient(45deg, #666 25%, transparent 25%, transparent 75%, #666 75%, #666), linear-gradient(45deg, #666 25%, transparent 25%, transparent 75%, #666 75%, #666);
+  background-position: 0 0, 18px 18px;
+ background-size: 36px 36px;
+}
